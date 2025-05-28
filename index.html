@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>중앙 정렬 To-Do 웹페이지</title>
+        <link rel="stylesheet" href="./index.css">
+    <script defer src="./index.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="top">
+           
+            <button id="name" onclick="inputUserName();">?</button>
+        </div>
+
+        <div class="container">
+            <div class="elements">
+                
+            </div>
+
+            <input type="text" name="content" placeholder="할일 입력">
+            <input type="text" name="manager" placeholder="담당자 입력">
+            <div class="buttons">
+                <button onclick="addTask()">추가</button>
+                <button onclick="saveTasks()">등록</button>
+                <button onclick="showTasks()">조회</button>
+                
+            </div>
+        </div>
+
+        <div class="container">
+            <div id="todo-list">
+                <h3 id="selectList">
+                    
+                   
+                </h3>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
